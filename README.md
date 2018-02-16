@@ -1,4 +1,4 @@
-# creative-coding
+# Creative Coding
 Lil' creative coding experiments with [p5.js](https://p5js.org/)
 
 ## Abstract 01
