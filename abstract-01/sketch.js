@@ -3,3 +3,11 @@ function setup() {
   background(255)
   drawAbstract01()
 };
+
+function keyPressed() {
+  if (keyCode === ENTER) {
+	  clear()
+	  drawAbstract01();
+	  
+  }
+}
