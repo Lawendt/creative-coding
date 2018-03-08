@@ -12,24 +12,25 @@ var strokeEnabled = false;
 var types = [];
 
 
-function DrawAbstract01(options) {
+function DrawAbstract(options) {
     if (options != undefined) {
-        WIDTH = options['width'] === undefined ? WIDTH : options['width'];
-        HEIGHT = options['height'] === undefined ? HEIGHT : options['height'];
-        numberOfColors = options['numberOfColors'] === undefined ? numberOfColors : options['numberOfColors'];
-        minElements = options['minElements'] === undefined ? minElements : options['minElements'];
-        maxElements = options['maxElements'] === undefined ? maxElements : options['maxElements'];
-        maxSize = options['maxSize'] === undefined ? maxSize : options['maxSize'];
-        lineMean = options['lineMean'] === undefined ? lineMean : options['lineMean'];
-        lineSD = options['lineSD'] === undefined ? lineSD : options['lineSD'];
+        WIDTH = options['width'] === undefined ? 640 : options['width'];
+        HEIGHT = options['height'] === undefined ? 480 : options['height'];
+        numberOfColors = options['numberOfColors'] === undefined ? 3 : options['numberOfColors'];
+        minElements = options['minElements'] === undefined ? 3 : options['minElements'];
+        maxElements = options['maxElements'] === undefined ? 10 : options['maxElements'];
+        maxSize = options['maxSize'] === undefined ? 100 : options['maxSize'];
+		 maxSize = options['minSize'] === undefined ? 10 : options['minSize'];
+        lineMean = options['lineMean'] === undefined ? 3 : options['lineMean'];
+        lineSD = options['lineSD'] === undefined ? 1 : options['lineSD'];
         fillEnabled = options['fillEnabled'] === undefined ? fillEnabled : options['fillEnabled'];
         strokeEnabled = options['strokeEnabled'] === undefined ? strokeEnabled : options['strokeEnabled'];
     }
 
-    drawAbstract01();
+    drawAbstract();
 }
 
-function drawAbstract01() {
+function drawAbstract() {
     colors = []
     for (var i = 0; i < numberOfColors; i++) {
         colors[i] = randomColor();
