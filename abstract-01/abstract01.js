@@ -23,8 +23,8 @@ function DrawAbstract(options) {
 		 maxSize = options['minSize'] === undefined ? 10 : options['minSize'];
         lineMean = options['lineMean'] === undefined ? 3 : options['lineMean'];
         lineSD = options['lineSD'] === undefined ? 1 : options['lineSD'];
-        fillEnabled = options['fillEnabled'] === undefined ? fillEnabled : options['fillEnabled'];
-        strokeEnabled = options['strokeEnabled'] === undefined ? strokeEnabled : options['strokeEnabled'];
+        fillEnabled = options['fillEnabled'] === undefined ? true : options['fillEnabled'];
+        strokeEnabled = options['strokeEnabled'] === undefined ? false : options['strokeEnabled'];
     }
 
     drawAbstract();
