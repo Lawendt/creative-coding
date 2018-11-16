@@ -26,6 +26,19 @@ function DrawAbstract(options) {
         fillEnabled = options['fillEnabled'] === undefined ? true : options['fillEnabled'];
         strokeEnabled = options['strokeEnabled'] === undefined ? false : options['strokeEnabled'];
     }
+    else {
+	WIDTH = 640;
+        HEIGHT = 480;
+        numberOfColors = 3;
+        minElements = 3;
+        maxElements = 10;
+        maxSize = 100;
+	maxSize = 10;
+        lineMean = 3;
+        lineSD = 1;
+        fillEnabled = true;
+        strokeEnabled = false;
+    }
 
     drawAbstract();
 }
