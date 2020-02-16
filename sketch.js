@@ -17,5 +17,5 @@ function setup() {
 }
 
 function GoToAbstract01() {
-    window.location.href = "./abstract-01";
+    window.location.href = "./abstract";
 }
